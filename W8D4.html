@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W8D4 - Pratica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary navbar-expand">
+        <div class="container d-flex justify-content-between  ">
+            <div class="container d-flex justify-content-start ">
+                <a class="navbar-brand pb-2 " href="#">
+                    <img src="img/logo/Bootstrap_logo.svg.png" alt="Bootstrap" width="35" height="28">
+                </a>
+            </div>
+
+            
+            <div class="container d-flex justify-content-end">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-search mx-3 pt-1 " viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle pt-1" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                </svg>
+            </div>
+
+        </div>
+    </nav>
+    <nav class="navbar bg-body-tertiary navbar-expand-md">
+        <div class="container d-flex justify-content-end ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#first-section">Chi siamo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#second-section">Offerta della settimana</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#third-section">Welcome Summer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#fourth-section">Offerta del giorno</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#fifth-section">Last Minute</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#sixth-section">Testimonial</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="first-section">
+        <div class="mb-4 bg-body-tertiary rounded-3">
+            <div class="container-fluid p-0" >
+                <div class="row g-0 bg-secondary-subtle " >
+                        <div class=" col-12 col-sm-4 ps-2 ">
+                            <h1 class="display-5 fw-bold">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-airplane-engines" viewBox="0 0 16 16">
+                                <path d="M8 0c-.787 0-1.292.592-1.572 1.151A4.35 4.35 0 0 0 6 3v3.691l-2 1V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.191l-1.17.585A1.5 1.5 0 0 0 0 10.618V12a.5.5 0 0 0 .582.493l1.631-.272.313.937a.5.5 0 0 0 .948 0l.405-1.214 2.21-.369.375 2.253-1.318 1.318A.5.5 0 0 0 5.5 16h5a.5.5 0 0 0 .354-.854l-1.318-1.318.375-2.253 2.21.369.405 1.214a.5.5 0 0 0 .948 0l.313-.937 1.63.272A.5.5 0 0 0 16 12v-1.382a1.5 1.5 0 0 0-.83-1.342L14 8.691V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.191l-2-1V3c0-.568-.14-1.271-.428-1.849C9.292.591 8.787 0 8 0M7 3c0-.432.11-.979.322-1.401C7.542 1.159 7.787 1 8 1s.458.158.678.599C8.889 2.02 9 2.569 9 3v4a.5.5 0 0 0 .276.447l5.448 2.724a.5.5 0 0 1 .276.447v.792l-5.418-.903a.5.5 0 0 0-.575.41l-.5 3a.5.5 0 0 0 .14.437l.646.646H6.707l.647-.646a.5.5 0 0 0 .14-.436l-.5-3a.5.5 0 0 0-.576-.411L1 11.41v-.792a.5.5 0 0 1 .276-.447l5.448-2.724A.5.5 0 0 0 7 7z"/>
+                                </svg>
+                                Boostrap vacanze
+                            </h1>
+                            <p class="col-md-8 fs-4">
+                                Risparmia e goditi le tue meritate vacanze con Boostrap vacanze!
+                            </p>
+                            <button class="btn btn-outline-dark btn-lg mb-3" type="button">
+                                Scopri di più
+                            </button>
+                        </div>
+                        <div class="col-12 col-sm-8 d-flex justify-content-end ">
+                            <img src="img/places _img/jumbotron img.png" class="img-fluid" alt="...">
+                        </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="second-section" class="mb-5">
+        <div class="container-fluid pb-3 pt-2">
+            <div class="row d-flex justify-content-between">
+                <div class="col-8">
+                    <h1 class=" my-3">
+                        Offerta della settimana
+                    </h1>
+                </div>
+                <div class="col-4 d-flex justify-content-end">
+                    <button class="btn btn-outline-dark my-3 " type="button" data-bs-toggle="collapse" data-bs-target="#second-section-collapse" aria-expanded="false" aria-controls="second-section-collapse">
+                        Collapse
+                    </button>
+                </div>
+            </div>
+            <div class="row g-3 gx-3 " id="second-section-collapse">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="https://picsum.photos/260" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Weekly discount location 1
+                            </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sed nulla mollitia quia.
+                            </p>
+                            <a href="#" class="btn btn-outline-dark">
+                                Prenota ora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="https://picsum.photos/260" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Weekly discount location 2
+                            </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sed nulla mollitia quia.
+                            </p>
+                            <a href="#" class="btn btn-outline-dark">
+                                Prenota ora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="https://picsum.photos/260" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Weekly discount location 3
+                            </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sed nulla mollitia quia.
+                            </p>
+                            <a href="#" class="btn btn-outline-dark">
+                                Prenota ora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img src="https://picsum.photos/260" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Weekly discount location 4
+                            </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sed nulla mollitia quia.
+                            </p>
+                            <a href="#" class="btn btn-outline-dark">
+                                Prenota ora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="third-section" class="mb-5">
+        <div class="container-fluid pb-3 pt-2">
+            <div class="row d-flex justify-content-between">
+                <div class="col-8">
+                    <h1 class=" my-3">
+                        Welcome Summer
+                    </h1>
+                </div>
+                <div class="col-4 d-flex justify-content-end">
+                    <button class="btn btn-outline-dark my-3 " type="button" data-bs-toggle="collapse" data-bs-target="#third-section-collapse" aria-expanded="false" aria-controls="third-section-collapse">
+                        Collapse
+                    </button>
+                </div>
+            </div>
+            <div class="row g-3 gx-3" id="third-section-collapse">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="card shadow">
+                        <img src="https://picsum.photos/259" class="card-img-top" alt="...">
+                        <div class="card-body ">
+                            <h5 class="card-title">
+                                Summer location 1
+                            </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sed nulla mollitia quia.
+                            </p>
+                            <a href="#" class="btn btn-outline-dark">
+                                Prenota ora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="card shadow">
+                        <img src="https://picsum.photos/259" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Summer location 2
+                            </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sed nulla mollitia quia.
+                            </p>
+                            <a href="#" class="btn btn-outline-dark">
+                                Prenota ora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="card shadow">
+                        <img src="https://picsum.photos/259" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Summer location 3
+                            </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sed nulla mollitia quia.
+                            </p>
+                            <a href="#" class="btn btn-outline-dark">
+                                Prenota ora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="card shadow">
+                        <img src="https://picsum.photos/259" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Summer location 4
+                            </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sed nulla mollitia quia.
+                            </p>
+                            <a href="#" class="btn btn-outline-dark">
+                                Prenota ora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="card shadow">
+                        <img src="https://picsum.photos/259" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Summer location 5
+                            </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sed nulla mollitia quia.
+                            </p>
+                            <a href="#" class="btn btn-outline-dark">
+                                Prenota ora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="card shadow">
+                        <img src="https://picsum.photos/259" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Summer location 6
+                            </h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sed nulla mollitia quia.
+                            </p>
+                            <a href="#" class="btn btn-outline-dark">
+                                Prenota ora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fourth-section" class="d-none d-md-block">
+        <div class="row d-flex justify-content-between">
+            <div class="col-8">
+                <h1 class=" my-3 text-end pe-5 me-5 ">
+                    Offerta del giorno
+                </h1>
+            </div>
+            <div class="col-4 d-flex justify-content-end my-3 ">
+                <button class="btn btn-outline-dark me-3 " type="button" data-bs-toggle="collapse" data-bs-target="#fourth-section-collapse" aria-expanded="false" aria-controls="fourth-section-collapse">
+                    Collapse
+                </button>
+            </div>
+        </div>
+        <div class="container " id="fourth-section-collapse">
+            <div class="card mb-3 m-auto ">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <img src="https://picsum.photos/900/300" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Daily discount location
+                            </h5>
+                            <p class="badge text-bg-danger">
+                                Miglior offerta
+                            </p>
+                            <p class="card-text">
+                                15.01.2021 — 31.01.2021
+                            </p>
+                            <p class="card-text">
+                                A partire da 500€ a Villa
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fifth-section">
+        <div class="container-fluid pb-3 pt-2">
+            <div class="row d-flex justify-content-between">
+                <div class="col-8">
+                    <h1 class=" my-3">
+                        Last Minute
+                    </h1>
+                </div>
+                <div class="col-4 d-flex justify-content-end">
+                    <button class="btn btn-outline-dark my-3 " type="button" data-bs-toggle="collapse" data-bs-target="#fifth-section-collapse" aria-expanded="false" aria-controls="fifth-section-collapse">
+                        Collapse
+                    </button>
+                </div>
+            </div>
+            <div class="row g-3 gx-3 " id="fifth-section-collapse">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="card text-bg-dark">
+                        <img src="https://picsum.photos/258" class="card-img" alt="...">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="card text-bg-dark">
+                        <img src="https://picsum.photos/258" class="card-img" alt="...">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="card text-bg-dark">
+                        <img src="https://picsum.photos/258" class="card-img" alt="...">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="card text-bg-dark">
+                        <img src="https://picsum.photos/258" class="card-img" alt="...">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="card text-bg-dark">
+                        <img src="https://picsum.photos/258" class="card-img" alt="...">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="card text-bg-dark">
+                        <img src="https://picsum.photos/258" class="card-img" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sixth-section" class="mb-5">
+        <div class="container-fluid mt-5 ">
+            <div class="row d-flex justify-content-between g-5">
+                <div class="col-8">
+                    <h1 class=" my-5 text-end pe-5 me-5 ">
+                        Testimonial
+                    </h1>
+                </div>
+                <div class="col-4 d-flex justify-content-end">
+                    <button class="btn btn-outline-dark my-5" type="button" data-bs-toggle="collapse" data-bs-target="#sixth-section-collapse" aria-expanded="false" aria-controls="sixth-section-collapse">
+                        Collapse
+                    </button>
+                </div>
+            <div class="container" id="sixth-section-collapse">
+                <div class="row m-auto bg-secondary-subtle mb-3 rounded-3" style="max-width: 700px;">
+                    <h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-fill pb-1 " viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                         </svg>
+                        User1
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid minus autem soluta repudiandae quod facere provident consectetur rerum perspiciatis a, suscipit sit ipsa ut, officia quae mollitia? Dicta, odit beatae.
+                    </p>
+                </div>
+                <div class="row m-auto bg-secondary-subtle mb-3 rounded-3" style="max-width: 700px;">
+                    <h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-fill pb-1 " viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                         </svg>
+                        User2
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid minus autem soluta repudiandae quod facere provident consectetur rerum perspiciatis a, suscipit sit ipsa ut, officia quae mollitia? Dicta, odit beatae.
+                    </p>
+                </div>
+                <div class="row m-auto bg-secondary-subtle mb-3 rounded-3" style="max-width: 700px;">
+                    <h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-fill pb-1 " viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                         </svg>
+                        User3
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid minus autem soluta repudiandae quod facere provident consectetur rerum perspiciatis a, suscipit sit ipsa ut, officia quae mollitia? Dicta, odit beatae.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer class="container-fluid bg-secondary d-flex justify-content-center align-content-center flex-column ">
+        <button class="btn btn-outline-light btn-lg m-auto mt-3 mb-3" type="button" data-bs-toggle="modal" data-bs-target="#contattaci-modale" data-bs-whatever="nomecognome@email.com">
+            Contattaci
+        </button>
+
+        <div class="modal fade" id="contattaci-modale" tabindex="-1" aria-labelledby="contattaci-modaleLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="contattaci-modaleLabel">Contattaci</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Email:</label>
+                      <input type="text" class="form-control" id="email-name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Oggetto:</label>
+                      <input type="text" class="form-control" >
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Contenuto:</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-outline-dark">Send message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <span class="text-center text-light mb-3">
+            © 2021 Kalina Travel LTD. All Rights Reserved.
+        </span>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
