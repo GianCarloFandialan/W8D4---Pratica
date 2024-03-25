@@ -7,7 +7,11 @@ function counter() {
     counter = 0;
     for (const card of cards) {
         counter += 1
+
+        //5)Crea una funzione che rimuova tutte le "card" della pagina
+        card.innerHTML= "";
     }
+
     return counter
 }
 
@@ -33,3 +37,5 @@ if (contattaciModale) {
     modalBodyInput.value = recipient
   })
 }
+
+
